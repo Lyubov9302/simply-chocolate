@@ -640,22 +640,25 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop"
+    data-modal>
       <div class="modal">
         <button
           type="button"
           class="modal-close-btn"
-        >
+        data-modal-close>
            <svg
+                class="modal-close-icon"
                 width="24"
                 height="24"
               >
-                <use href="./images/icons.svg#icon-user"></use>
+                <use href="./images/icons.svg#icon-close-icon"></use>
               </svg>
         </button>
         <p class="section-title modal-title">
-          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+          LEAVE A REVIEW <br /> ABOUT <span class="accent">OUR CHOCOLATE</span>
         </p>
+        
         <form class="modal-form">
           <div class="modal-field">
             <label
@@ -669,7 +672,6 @@
                 type="text"
                 class="modal-input"
                 name="user-name"
-                placeholder="Enter Name"
                 required
                 id="user-name"
               />
@@ -694,7 +696,6 @@
               type="email"
               class="modal-input"
               name="user-email"
-              placeholder="Enter Email"
               id="user-email"
             />
              <svg
@@ -702,7 +703,7 @@
                 width="17"
                 height="17"
               >
-                <use href="./images/icons.svg#icon-email"></use>
+                <use href="./images/icons.svg#icon-mail"></use>
               </svg>
           </div>
           </div>
@@ -715,9 +716,7 @@
                 type="tel"
                 class="modal-input"
                 name="user-tel"
-                placeholder="Enter Number"
                 required
-                value="+380"
                 id="user-tel"
               />
                <svg
@@ -742,23 +741,23 @@
               id="user-text"
               class="modal-textarea"
               placeholder="Enter text"
-            >
-            </textarea>
+            ></textarea>
           </div>
+
           <div class="modal-field-checkbox">
-          
             <input
               type="checkbox"
               id="policy"
               name="policy"
               value="true"
               class="modal-check visually-hidden"
+              required
             />
             <label
               for="policy"
               class="modal-check-text"
             >
-              <span class="modal-chackbox">
+              <span class="modal-checkbox">
                 <svg
                   class="modal-checkbox-icon"
                   width="10"
@@ -767,8 +766,10 @@
                   <use href="./images/icons.svg#icon-check-icon"></use>
                 </svg>
               </span>
+              <span>
               I accept the terms and conditions of the&nbsp;
-              <a href="">Privacy Policy</a>
+              <a class="modal-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
