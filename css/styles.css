@@ -292,7 +292,6 @@ h6 {
   color: #fff;
   display: flex;
   align-items: center;
-  /* gap: 14px; */
   &::after {
     content: "";
     background-color: #fafafa;
@@ -925,13 +924,59 @@ color: #111;
 
 
 
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
+
+    .menu-open-btn {
+    display: none;
+  }
+
+  .header-logo {
+    padding-top: 30px;
+    padding-bottom: 29px;
+  }
+
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 101px;
+  }
+
+
+.header-menu-list {
+  display: flex;
+  gap: 24px; 
+}
+
+.header-menu-link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: -0.02em;
+color: #111;
+}
+
+.header-soc-list {
+  display: flex;
+  gap: 18px;
+}
+
+.header-soc-icon {
+
+  stroke: #111;  
+}
+
+
+
+
+
 
   .hero {
     padding-bottom: 20px;
