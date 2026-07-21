@@ -126,11 +126,12 @@
         </button>
       </div>
 
-      <div class="mob-menu">
+      <div class="mob-menu is-open" data-menu>
         <div class="mobile-menu-container">
           <button
             type="button"
             class="menu-close-btn"
+            data-menu-close
           >
             <svg
               width="14"
@@ -536,6 +537,7 @@
           <button
             type="button"
             class="review-btn"
+            data-modal-open
           >
             Leave a review
           </button>
@@ -787,5 +789,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -196,12 +196,9 @@ h6 {
   gap: 18px;
 }
 
-.mob-soc-link {
-  fill: transparent;
-  stroke: #fafafa;
+.mob-soc-icon {
+  fill: #fff;
 }
-
-
 
 /* hero  */
 
@@ -1265,14 +1262,18 @@ gap: 32px;
     padding-right: 15px;
   }
 
+  .header-navigation {
+    gap: 447px;
+  }
+
   .hero {
-    padding-bottom: 36px;
+    margin-bottom: 72px;
     max-width: 1166px;
     background-image:
       linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)),
       url(../images/hero-bg-desk.jpg);
   }
-}
+
 
   @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
     .hero {
@@ -1280,7 +1281,7 @@ gap: 32px;
         linear-gradient(rgba(30, 24, 35, 0.4), rgba(30, 24, 35, 0.4)),
         url(../images/hero-bg-desktop2x-min.jpg);
     }
-  
+  }
 
   .hero-wrapper {
     padding: 375px 40px 40px 40px;
@@ -1289,6 +1290,125 @@ gap: 32px;
   .hero-title {
     font-size: 28px;
   }
+
+  /* features  */
+
+  .features-list {
+  gap: 70px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 140px) / 3);
+    padding-right: 0;
+    position: relative;
+  }
+
+    .features-item:not(:last-of-type)::after {
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 0px;
+    height: 124px;
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+  }
+
+  /* taste  */
+
+  .taste {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.taste-list {
+  gap: 19px
+}
+
+ .taste-item {
+    flex-basis: calc((100% - 57px) / 4);
+  }
+
+ .taste-hidden-box {
+  padding: 20px;
+ }
+
+ .taste-item:nth-child(2),
+ .taste-item:nth-child(3) {
+    order: 0;
+  }
+
+  /* made  */
+  .made {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.made-subtitle {
+  max-width: 350px;
+}
+
+.made .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.made-wrapper {
+  flex-wrap: nowrap;
+}
+
+.made-item {
+  margin-bottom: 24px;
+}
+
+.made-item-text {
+  max-width: 410px;
+}
+
+/* review  */
+
+.review {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.review-title {
+  margin-bottom: 91px;
+}
+
+.review-list {
+  flex-wrap: nowrap;
+  gap: 28px;
+  margin-bottom: 49px;
+}
+
+.review-item {
+  flex-basis: calc((100% - 56px) / 3);
+  padding: 56px 24px 24px;
+  }
+
+  /* footer  */
+
+  .footer-bottom {
+    justify-content: space-between;
+  }
+
+  .footer-menu-list {
+  gap: 24px;
+} 
+
+ .footer-input {
+  padding: 15px 24px;
+  font-size: 18px;
+  width: 313px;
+  height: 52px;
+} 
+
+.footer-btn {
+  padding: 17px 33px 18px 32px;
+}
+
 }
 
 
